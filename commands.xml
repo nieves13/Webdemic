@@ -1,0 +1,198 @@
+<commands>
+
+  <windows>
+
+    <command>
+   	  <code>cmd</code>
+   		<description>
+   		   This command will open Windows system symbols
+   		</description>
+    </command>
+
+		<command>
+			<code>taskmgr</code>
+			<description>
+				This command will open the Windows task manager
+			</description>
+		</command>
+
+		<command>
+			<code>mrt</code>
+			<description>
+      This command will open the Windows Malicious Software Removal Tool
+			</description>
+		</command>
+
+    <command>
+      <code>%programfiles%</code>
+  	  <description>
+        This command opens the program installation folder in the operating system
+			</description>
+    </command>
+
+  </windows>
+
+  <linux>
+   	<command>
+   		<code>ls</code>
+   		<description>
+   			It presents to you the contents of a particular directory.
+   		</description>
+   		<parameters>
+			
+   			<parameter>
+   				 <param_code>-l</param_code>
+   				 <param_description>
+   					 To list the content as a detailed list.
+   				 </param_description>
+   			</parameter>
+
+   			<parameter>
+   				<param_code>-a</param_code>
+   				<param_description>
+						Show files (hidden + non-hidden).
+   				</param_description>
+   			</parameter>
+				 
+				<example_of_use>
+					<code_example>ls -la </code_example>
+					<output> </output>
+				</example_of_use>
+
+   		 </parameters>
+   	</command>
+
+   	<command>
+   		<code>cd</code>
+   		<description>
+   			Change directory from the current directory to another one.
+   		</description>
+   	</command>
+
+   	<command>
+   		<code>pwd</code>
+   		<description>
+				It shows the directory you’re currently in.
+   		</description>
+			</command>
+
+   	<command>
+   		<code>cp</code>
+   		<description>
+   			It copy a file or directory from one folder to another.
+   		</description>
+   		<parameters>
+
+   			<parameter>
+   				<param_code>-i</param_code>
+   				<param_description>
+   					It indicates that you are waiting for confirmation if there are files in the destination that can be overwritten.
+   				</param_description>
+   			</parameter>
+
+   			<parameter>
+   				<param_code>-r</param_code>
+   				<param_description>
+   					Includes subdirectories if they exist.
+   				</param_description>
+   			</parameter>
+				
+				<example_of_use>
+					<code_example> </code_example>
+					<output> </output>
+				</example_of_use>
+
+   		</parameters>
+    </command>
+
+   	<command>
+   		<code>mv</code>
+   		<description> Used to move or rename files or directories. </description>
+   		<parameters>
+
+   			<parameter>
+   				<param_code>-i</param_code>
+   				<param_description>
+						It indicates that you are waiting for confirmation if there are files in the destination that can be overwritten.
+   				</param_description>
+   			</parameter>
+
+				<example_of_use>
+					<code_example> </code_example>
+					<output> </output>
+				</example_of_use>
+
+   		</parameters>
+   	</command>
+
+		<command>
+   		<code>ps</code>
+   		<description> 
+				It shows process status.
+   		</description>
+   		<parameters>
+
+   			<parameter>
+   				<param_code></param_code>
+   				<param_description>
+   					Without any parameter, it displays processes for the current shell.
+   				</param_description>
+   			</parameter>
+				
+				<parameter>
+   				<param_code>-e</param_code>
+   				<param_description>
+   					Display every active process on a Linux system in generic format.
+   				</param_description>
+   			</parameter>
+				
+				<example_of_use>
+					<code_example> </code_example>
+					<output> </output>
+				</example_of_use>
+
+   		</parameters>
+   	</command>
+
+		<command>
+   		<code>ifconfig</code>
+   		<description> 
+				It’s used to view and change the configuration of the network interfaces on your system.
+   		</description>
+   		<parameters>
+
+   			<parameter>
+   				<param_code></param_code>
+   				<param_description>
+   					Without any parameter, it displays information about all network interfaces currently in operation.
+   				</param_description>
+   			</parameter>
+
+				<parameter>
+   				<param_code>-a</param_code>
+   				<param_description>
+   					Similar to no parameter, but if there are any inactive interfaces on the system, their configuration will also be displayed.
+   				</param_description>
+   			</parameter>
+				<example_of_use>
+					<code_example> </code_example>
+					<output> </output>
+				</example_of_use>
+
+   		</parameters>
+   	</command>
+
+
+		<command>
+   		<code>mkdir</code>
+   		<description> It creates a new directory.</description>
+   	</command>
+
+		<command>
+   		<code>rmdir</code>
+   		<description> It deletes a directory.</description>
+   	</command>
+		
+  </linux>
+
+</commands>
