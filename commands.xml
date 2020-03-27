@@ -1,14 +1,3 @@
-<img>   Imprimir ĺinea
-    <xsl:attribute name="src">  Elemento tendrá un atributo que se llame src
-      <xsl:value-of select="imatge" />		seleccionar imagen
-    </xsl:attribute>
-</img>
-
-<img src="machuca.jpg"/>
-	en xml: <imatge>machuca.jpg</imatge>
-
-
-
 <commands>
 
   <windows>
