@@ -367,7 +367,7 @@
    				</param_description>
    			</parameter>				
 				<example_of_use>
-					<code_example> </code_example>
+					<code_example>cd Documents</code_example>
 					<output>cd.jpg</output>
 				</example_of_use>
 
@@ -410,7 +410,7 @@
    			</parameter>
 				
 				<example_of_use>
-					<code_example> </code_example>
+					<code_example>cmp file1.txt file2.txt</code_example>
 					<output>cmp.jpg</output>
 				</example_of_use>
 
@@ -445,7 +445,7 @@
    				</param_description>
    			</parameter>
 				<example_of_use>
-					<code_example> </code_example>
+					<code_example>cp image.jpg ~/Documents</code_example>
 					<output>cp.jpg</output>
 				</example_of_use>
 
@@ -471,7 +471,7 @@
    				</param_description>					
    			</parameter>
 				<example_of_use>
-					<code_example> </code_example>
+					<code_example>dig google.com @8.8.8.8</code_example>
 					<output>dig.jpg</output>
 				</example_of_use>
    		</parameters>
