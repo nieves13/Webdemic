@@ -1,0 +1,36 @@
+so{
+  display:list-item;
+  list-style: disc inside;
+  padding-left: 2em;
+}
+
+command {
+
+    display:list-item;
+    list-style: disc inside;
+    padding-left: 2em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+description, parameters, code_example, output {
+  display:list-item;
+  list-style: disc inside;
+  padding-left: 2em;
+}
+
+description:before {                 
+	content : "Description: " ;        
+	font-weight : bold           
+}
+
+command:before {                 
+	content : "Command: " ;        
+	font-weight : bold           
+}
+
+parameters:before{
+
+	content : "Parameters: " ;        
+	font-weight : bold   
+}
