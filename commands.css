@@ -4,13 +4,18 @@ so{
   padding-left: 2em;
 }
 
+so:before{
+    content: "Operative System: ";
+    font-weight : bold
+}
+
 command {
 
     display:list-item;
     list-style: disc inside;
     padding-left: 2em;
-	padding-top: 1em;
-	padding-bottom: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 description, parameters, code_example, output {
@@ -19,18 +24,42 @@ description, parameters, code_example, output {
   padding-left: 2em;
 }
 
-description:before {                 
-	content : "Description: " ;        
-	font-weight : bold           
+param_code{
+  display:list-item;
+  list-style: disc inside;
+  padding-left: 2em;
+
 }
 
-command:before {                 
-	content : "Command: " ;        
-	font-weight : bold           
+param_code:before{
+    content: "Param code: ";
+    font-weight : bold
+}
+
+param_description{
+    display:list-item;
+    list-style: disc inside;
+    padding-left: 3em;
+}
+
+param_description:before{
+    content: "Param description: ";
+    font-weight : bold;
+}
+
+description:before {
+    content : "Description: " ;
+    font-weight : bold
+}
+
+command:before {
+    content : "Command: " ;
+    font-weight : bold
 }
 
 parameters:before{
 
-	content : "Parameters: " ;        
-	font-weight : bold   
+    content : "Parameters: " ;
+    font-weight : bold;
+
 }
