@@ -1,520 +1,349 @@
-<commands>
-
-  <windows>
-
-    <command>
-   	  <code>cmd</code>
-   		<description>
-   		   This command will open Windows system symbols
-   		</description>
-			<parameters>
-   			<parameter>
-   				<param_code>/c</param_code>
-   				<param_description>
-						Run Command and then terminate.
-   				</param_description>
-   			</parameter>
-   			<parameter>
-   				<param_code>/k</param_code>
-   				<param_description>
-						Run Command and then return to the CMD prompt. This is useful for testing, to examine variables.
-   				</param_description>
-   			</parameter>				
-
-				<example_of_use>
-					<code_example>CMD /c write.exe </code_example>
-					<output>cmd.jpg</output>
-				</example_of_use>
-
-   		</parameters>			
-    </command>
-
-		<command>
-			<code>taskmgr</code>
-			<description>
-				This command will open the Windows task manager
-			</description>
-		</command>
-
-		<command>
-			<code>mrt</code>
-			<description>
-      This command will open the Windows Malicious Software Removal Tool
-			</description>
-		</command>
-
-    <command>
-      <code>%programfiles%</code>
-  	  <description>
-        This command opens the program installation folder in the operating system
-			</description>
-    </command>
-
-    <command>
-   	  <code>del</code>
-   		<description>
-   		   Delete one or more files.
-   		</description>		
-    </command>
-		
-    <command>
-   	  <code>FIND</code>
-   		<description>
-   		   Search for a text string in a file.
-   		</description>
-			<parameters>
-   			<parameter>
-   				<param_code>/V</param_code>
-   				<param_description>
-						Display all lines NOT containing the specified string.
-   				</param_description>
-   			</parameter>
-   			<parameter>
-   				<param_code>/C</param_code>
-   				<param_description>
-						Count the number of lines containing the string.
-   				</param_description>
-   			</parameter>
-
-				<example_of_use>
-					<code_example>FIND "Ejemplo" ejemplo.txt</code_example>
-					<output>find.jpg</output>
-				</example_of_use>
-
-   		</parameters>			
-    </command>
-
-    <command>
-   	  <code>format</code>
-   		<description>
-   		   Format a disk.
-   		</description>		
-    </command>
-
-    <command>
-   	  <code>hostname</code>
-   		<description>
-   		   Display the host name portion of the full computer name of the computer.
-   		</description>
-			<parameters>
-   			<parameter>
-   				<param_code>/?</param_code>
-   				<param_description>
-						Display help.
-   				</param_description>
-   			</parameter>		
-
-				<example_of_use>
-					<code_example>hostname </code_example>
-					<output>hostname.jpg</output>
-				</example_of_use>
-
-   		</parameters>			
-    </command>
-
-    <command>
-   	  <code>ipconfig</code>
-   		<description>
-   		   This command configure ip.
-   		</description>
-			<parameters>
-   			<parameter>
-   				<param_code>/all</param_code>
-   				<param_description>
-						Display full configuration information.
-   				</param_description>
-   			</parameter>			
-
-				<example_of_use>
-					<code_example>ipconfig /all </code_example>
-					<output>ipc.jpg</output>
-				</example_of_use>
-
-   		</parameters>			
-    </command>
-
-    <command>
-   	  <code>ping</code>
-   		<description>
-   		   Test a network connection.
-   		</description>
-			<parameters>
-   			<parameter>
-   				<param_code>-a</param_code>
-   				<param_description>
-						Resolve addresses to hostnames.
-   				</param_description>
-   			</parameter>
-   			<parameter>
-   				<param_code>-t</param_code>
-   				<param_description>
-						Ping the destination host until interrupted.
-   				</param_description>
-   			</parameter>				
-
-				<example_of_use>
-					<code_example>ping www.google.es</code_example>
-					<output>ping.jpg</output>
-				</example_of_use>
-
-   		</parameters>			
-    </command>		
-  </windows>
-
-  <linux>
-   	<command>
-   		<code>ls</code>
-   		<description>
-   			It presents to you the contents of a particular directory.
-   		</description>
-   		<parameters>
-			
-   			<parameter>
-   				 <param_code>-l</param_code>
-   				 <param_description>
-   					 To list the content as a detailed list.
-   				 </param_description>
-   			</parameter>
-
-   			<parameter>
-   				<param_code>-a</param_code>
-   				<param_description>
-						Show files (hidden + non-hidden).
-   				</param_description>
-   			</parameter>
-				 
-				<example_of_use>
-					<code_example>ls -la </code_example>
-					<output>ls.jpg</output>
-				</example_of_use>
-
-   		 </parameters>
-   	</command>
-
-   	<command>
-   		<code>cd</code>
-   		<description>
-   			Change directory from the current directory to another one.
-   		</description>
-   	</command>
-
-   	<command>
-   		<code>pwd</code>
-   		<description>
-				It shows the directory you’re currently in.
-   		</description>
-			</command>
-
-   	<command>
-   		<code>cp</code>
-   		<description>
-   			It copy a file or directory from one folder to another.
-   		</description>
-   		<parameters>
-
-   			<parameter>
-   				<param_code>-i</param_code>
-   				<param_description>
-   					It indicates that you are waiting for confirmation if there are files in the destination that can be overwritten.
-   				</param_description>
-   			</parameter>
-
-   			<parameter>
-   				<param_code>-r</param_code>
-   				<param_description>
-   					Includes subdirectories if they exist.
-   				</param_description>
-   			</parameter>
-				
-				<example_of_use>
-					<code_example> </code_example>
-					<output>cp.jpg</output>
-				</example_of_use>
-
-   		</parameters>
-    </command>
-
-   	<command>
-   		<code>mv</code>
-   		<description> Used to move or rename files or directories. </description>
-   		<parameters>
-
-   			<parameter>
-   				<param_code>-i</param_code>
-   				<param_description>
-						It indicates that you are waiting for confirmation if there are files in the destination that can be overwritten.
-   				</param_description>
-   			</parameter>
-
-				<example_of_use>
-					<code_example> </code_example>
-					<output>mv.jpg</output>
-				</example_of_use>
-
-   		</parameters>
-   	</command>
-
-		<command>
-   		<code>ps</code>
-   		<description> 
-				It shows process status.
-   		</description>
-   		<parameters>
-				
-				<parameter>
-   				<param_code>-e</param_code>
-   				<param_description>
-   					Display every active process on a Linux system in generic format.
-   				</param_description>
-   			</parameter>
-				
-				<example_of_use>
-					<code_example> </code_example>
-					<output>ps.jpg</output>
-				</example_of_use>
-
-   		</parameters>
-   	</command>
-
-		<command>
-   		<code>ifconfig</code>
-   		<description> 
-				It’s used to view and change the configuration of the network interfaces on your system.
-   		</description>
-   		<parameters>
-
-				<parameter>
-   				<param_code>-a</param_code>
-   				<param_description>
-   					Similar to no parameter, but if there are any inactive interfaces on the system, their configuration will also be displayed.
-   				</param_description>
-   			</parameter>
-				<example_of_use>
-					<code_example> </code_example>
-					<output>ifconfig.jpg</output>
-				</example_of_use>
-
-   		</parameters>
-   	</command>
-
-
-		<command>
-   		<code>mkdir</code>
-   		<description> It creates a new directory.</description>
-   	</command>
-
-		<command>
-   		<code>rmdir</code>
-   		<description> It deletes a directory.</description>
-   	</command>
-		
-  </linux>
-	
-	<macOS>
-		<command>
-   		<code>alloc</code>
-   		<description> 
-				List used and free memory.
-   		</description>
-   	</command>
-		
-		<command>
-   		<code>awk</code>
-   		<description> 
-				Find and Replace text within file(s).
-   		</description>
-   		<parameters>
-
-				<parameter>
-   				<param_code>-mr</param_code>
-   				<param_description>
-   					Set the maximum size of the input record (MaxRows).
-   				</param_description>
-   			</parameter>
-				
-				<parameter>
-   				<param_code>-mf</param_code>
-   				<param_description>
-   					Set the maximum number of fields (MaxFields).
-   				</param_description>
-   			</parameter>
-				
-				<example_of_use>
-					<code_example> </code_example>
-					<output>awk.jpg</output>
-				</example_of_use>
-
-   		</parameters>
-   	</command>
-
-		<command>
-   		<code>cd</code>
-   		<description> 
-				Change Directory.
-   		</description>
-   		<parameters>
-
-				<parameter>
-   				<param_code>-L</param_code>
-   				<param_description>
-   					Use the physical directory structure instead of following symbolic links.
-   				</param_description>
-   			</parameter>
-				<parameter>
-   				<param_code>-P</param_code>
-   				<param_description>
-   					Force symbolic links to be followed.
-   				</param_description>
-   			</parameter>				
-				<example_of_use>
-					<code_example>cd Documents</code_example>
-					<output>cd.jpg</output>
-				</example_of_use>
-
-   		</parameters>
-   	</command>
-		
-		<command>
-   		<code>clear</code>
-   		<description> 
-				Clear terminal screen.
-   		</description>
-   	</command>
-
-		<command>
-   		<code>cmp</code>
-   		<description> 
-				Compare two files of any type and writes the results to the standard output. By default, cmp is silent if the files are the same; if they differ, the byte and line number at which the first difference occurred is reported. .
-   		</description>
-   		<parameters>
-
-				<parameter>
-   				<param_code>-help</param_code>
-   				<param_description>
-						Output help.
-   				</param_description>
-   			</parameter>
-
-				<parameter>
-   				<param_code>-v --version</param_code>
-   				<param_description>
-						Output version info.
-   				</param_description>
-   			</parameter>
-				
-				<parameter>
-   				<param_code>-l --verbose</param_code>
-   				<param_description>
-						Output byte numbers and values of all differing bytes.
-   				</param_description>
-   			</parameter>
-				
-				<example_of_use>
-					<code_example>cmp file1.txt file2.txt</code_example>
-					<output>cmp.jpg</output>
-				</example_of_use>
-
-   		</parameters>
-   	</command>
-
-		<command>
-   		<code>cp</code>
-   		<description> 
-				Copy one or more files to another location.
-   		</description>
-   		<parameters>
-
-				<parameter>
-   				<param_code>-R</param_code>
-   				<param_description>
-						Copy the folder and subtree (recursive).
-   				</param_description>
-   			</parameter>
-
-				<parameter>
-   				<param_code>-H</param_code>
-   				<param_description>
-						Symbolic links on the command line are followed.
-   				</param_description>
-   			</parameter>
-				
-				<parameter>
-   				<param_code>-L</param_code>
-   				<param_description>
-						All symbolic links are followed.
-   				</param_description>
-   			</parameter>
-				<example_of_use>
-					<code_example>cp image.jpg ~/Documents</code_example>
-					<output>cp.jpg</output>
-				</example_of_use>
-
-   		</parameters>
-   	</command>
-
-		<command>
-   		<code>dig</code>
-   		<description> 
-				A flexible tool for interrogating DNS name servers.
-   		</description>
-   		<parameters>
-
-				<parameter>
-   				<param_code>-4</param_code>
-   				<param_description>
-   					Force dig to only use IPv4 query transport.
-   				</param_description>
-				<parameter>
-   				<param_code>-6</param_code>
-   				<param_description>
-   					Force dig to only use IPv6 query transport.
-   				</param_description>					
-   			</parameter>
-				<example_of_use>
-					<code_example>dig google.com @8.8.8.8</code_example>
-					<output>dig.jpg</output>
-				</example_of_use>
-   		</parameters>
-   	</command>
-
-		<command>
-   		<code>reboot</code>
-   		<description> 
-				Stop and restart the system.
-   		</description>
-
-
-   		</parameters>
-   	</command>
-
-		<command>
-   		<code>man</code>
-   		<description> 
-				Help manual.
-   		</description>
-   	</command>	
-
-		<command>
-   		<code>history</code>
-   		<description> 
-				Command history.
-   		</description>
-			
-   		<parameters>
-				<parameter>
-   				<param_code>-c</param_code>
-   				<param_description>
-   					Clear the history list by deleting all the entries.
-   				</param_description>
-   			</parameter>
-				<example_of_use>
-					<code_example> </code_example>
-					<output>hist.jpg</output>
-				</example_of_use>
-
-   		</parameters>
-			
-   	</command>		
-		
-	</macOS>
-</commands>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="lista.css" ?>
+<commands_system>
+  <so>
+    <name> Microsoft Windows </name>
+    <commands>
+      <command>
+        <code>cmd</code>
+        <description>This command will open Windows system symbols</description>
+        <parameters>
+          <parameter>
+            <param_code>/c</param_code>
+            <param_description>Run Command and then terminate.</param_description>
+          </parameter>
+          <parameter>
+            <param_code>/k</param_code>
+            <param_description>Run Command and then return to the CMD prompt. This is useful for testing, to examine variables.</param_description>
+          </parameter>
+          <example_of_use>
+            <code_example>CMD /c write.exe </code_example>
+            <output>cmd.jpg</output>
+          </example_of_use>
+        </parameters>
+      </command>
+      <command>
+        <code>taskmgr</code>
+        <description>This command will open the Windows task manager</description>
+      </command>
+      <command>
+        <code>mrt</code>
+        <description>This command will open the Windows Malicious Software Removal Tool</description>
+      </command>
+      <command>
+        <code>%programfiles%</code>
+        <description>This command opens the program installation folder in the operating system.</description>
+      </command>
+      <command>
+        <code>del</code>
+        <description>Delete one or more files.</description>
+      </command>
+      <command>
+        <code>FIND</code>
+        <description>Search for a text string in a file.</description>
+        <parameters>
+          <parameter>
+            <param_code>/V</param_code>
+            <param_description>Display all lines NOT containing the specified string.</param_description>
+          </parameter>
+          <parameter>
+            <param_code>/C</param_code>
+            <param_description>Count the number of lines containing the string.</param_description>
+          </parameter>
+          <example_of_use>
+            <code_example>FIND "Ejemplo" ejemplo.txt</code_example>
+            <output>find.jpg</output>
+          </example_of_use>
+        </parameters>
+      </command>
+      <command>
+        <code>format</code>
+        <description>Format a disk.</description>
+      </command>
+      <command>
+        <code>hostname</code>
+        <description>Display the host name portion of the full computer name of the computer.</description>
+        <parameters>
+          <parameter>
+            <param_code>/?</param_code>
+            <param_description>Display help.</param_description>
+          </parameter>
+          <example_of_use>
+            <code_example>hostname</code_example>
+            <output>hostname.jpg</output>
+          </example_of_use>
+        </parameters>
+      </command>
+      <command>
+        <code>ipconfig</code>
+        <description>This command configure ip.</description>
+        <parameters>
+          <parameter>
+            <param_code>/all</param_code>
+            <param_description>Display full configuration information.</param_description>
+          </parameter>
+          <example_of_use>
+            <code_example>ipconfig /all</code_example>
+            <output>ipc.jpg</output>
+          </example_of_use>
+        </parameters>
+      </command>
+      <command>
+        <code>ping</code>
+        <description>Test a network connection.</description>
+        <parameters>
+          <parameter>
+            <param_code>-a</param_code>
+            <param_description>Resolve addresses to hostnames.</param_description>
+          </parameter>
+          <parameter>
+            <param_code>-t</param_code>
+            <param_description>Ping the destination host until interrupted.</param_description>
+          </parameter>
+          <example_of_use>
+            <code_example>ping www.google.es</code_example>
+            <output>ping.jpg</output>
+          </example_of_use>
+        </parameters>
+      </command>
+    </commands>
+  </so>
+  <so>
+    <name>Linux</name>
+    <commands>
+      <command>
+        <code>ls</code>
+        <description>It presents to you the contents of a particular directory.</description>
+        <parameters>
+          <parameter>
+            <param_code>-l</param_code>
+            <param_description>To list the content as a detailed list.</param_description>
+          </parameter>
+          <parameter>
+            <param_code>-a</param_code>
+            <param_description>Show files (hidden + non-hidden).</param_description>
+          </parameter>
+          <example_of_use>
+            <code_example>ls -la </code_example>
+            <output>ls.jpg</output>
+          </example_of_use>
+        </parameters>
+      </command>
+      <command>
+        <code>cd</code>
+        <description>Change directory from the current directory to another one.</description>
+      </command>
+      <command>
+        <code>pwd</code>
+        <description>It shows the directory you’re currently in.</description>
+      </command>
+      <command>
+        <code>cp</code>
+        <description>It copy a file or directory from one folder to another.</description>
+        <parameters>
+          <parameter>
+            <param_code>-i</param_code>
+            <param_description>It indicates that you are waiting for confirmation if there are files in the destination that can be overwritten.</param_description>
+          </parameter>
+          <parameter>
+            <param_code>-r</param_code>
+            <param_description>Includes subdirectories if they exist.</param_description>
+          </parameter>
+          <example_of_use>
+            <code_example>
+            </code_example>
+            <output>cp.jpg</output>
+          </example_of_use>
+        </parameters>
+      </command>
+      <command>
+        <code>mv</code>
+        <description>Used to move or rename files or directories.</description>
+        <parameters>
+          <parameter>
+            <param_code>-i</param_code>
+            <param_description>It indicates that you are waiting for confirmation if there are files in the destination that can be overwritten.</param_description>
+          </parameter>
+          <example_of_use>
+            <code_example>
+            </code_example>
+            <output>mv.jpg</output>
+          </example_of_use>
+        </parameters>
+      </command>
+      <command>
+        <code>ps</code>
+        <description>It shows process status.</description>
+        <parameters>
+          <parameter>
+            <param_code>-e</param_code>
+            <param_description>Display every active process on a Linux system in generic format.</param_description>
+          </parameter>
+          <example_of_use>
+            <code_example>
+            </code_example>
+            <output>ps.jpg</output>
+          </example_of_use>
+        </parameters>
+      </command>
+      <command>
+        <code>ifconfig</code>
+        <description>It’s used to view and change the configuration of the network interfaces on your system.</description>
+        <parameters>
+          <parameter>
+            <param_code>-a</param_code>
+            <param_description>Similar to no parameter, but if there are any inactive interfaces on the system, their configuration will also be displayed.</param_description>
+          </parameter>
+          <example_of_use>
+            <code_example>
+            </code_example>
+            <output>ifconfig.jpg</output>
+          </example_of_use>
+        </parameters>
+      </command>
+      <command>
+        <code>mkdir</code>
+        <description>It creates a new directory.</description>
+      </command>
+      <command>
+        <code>rmdir</code>
+        <description>It deletes a directory.</description>
+      </command>
+    </commands>
+  </so>
+  <so>
+    <name> MacOS </name>
+    <commands>
+      <command>
+        <code>alloc</code>
+        <description>List used and free memory.</description>
+      </command>
+      <command>
+        <code>awk</code>
+        <description>Find and Replace text within file(s).</description>
+        <parameters>
+          <parameter>
+            <param_code>-mr</param_code>
+            <param_description>Set the maximum size of the input record (MaxRows).</param_description>
+          </parameter>
+          <parameter>
+            <param_code>-mf</param_code>
+            <param_description>Set the maximum number of fields (MaxFields).</param_description>
+          </parameter>
+          <example_of_use>
+            <code_example>
+            </code_example>
+            <output>awk.jpg</output>
+          </example_of_use>
+        </parameters>
+      </command>
+      <command>
+        <code>cd</code>
+        <description>Change Directory.</description>
+        <parameters>
+          <parameter>
+            <param_code>-L</param_code>
+            <param_description>Use the physical directory structure instead of following symbolic links.</param_description>
+          </parameter>
+          <parameter>
+            <param_code>-P</param_code>
+            <param_description>Force symbolic links to be followed.</param_description>
+          </parameter>
+          <example_of_use>
+            <code_example>cd Documents</code_example>
+            <output>cd.jpg</output>
+          </example_of_use>
+        </parameters>
+      </command>
+      <command>
+        <code>clear</code>
+        <description>Clear terminal screen.</description>
+      </command>
+      <command>
+        <code>cmp</code>
+        <description>Compare two files of any type and writes the results to the standard output. By default, cmp is silent if the files are the same; if they differ, the byte and line number at which the first difference occurred is reported.</description>
+        <parameters>
+          <parameter>
+            <param_code>-help</param_code>
+            <param_description>Output help.</param_description>
+          </parameter>
+          <parameter>
+            <param_code>-v --version</param_code>
+            <param_description>Output version info.</param_description>
+          </parameter>
+          <parameter>
+            <param_code>-l --verbose</param_code>
+            <param_description>Output byte numbers and values of all differing bytes.</param_description>
+          </parameter>
+          <example_of_use>
+            <code_example>cmp file1.txt file2.txt</code_example>
+            <output>cmp.jpg</output>
+          </example_of_use>
+        </parameters>
+      </command>
+      <command>
+        <code>cp</code>
+        <description>Copy one or more files to another location.</description>
+        <parameters>
+          <parameter>
+            <param_code>-R</param_code>
+            <param_description>Copy the folder and subtree (recursive).</param_description>
+          </parameter>
+          <parameter>
+            <param_code>-H</param_code>
+            <param_description>Symbolic links on the command line are followed.</param_description>
+          </parameter>
+          <parameter>
+            <param_code>-L</param_code>
+            <param_description>All symbolic links are followed.</param_description>
+          </parameter>
+          <example_of_use>
+            <code_example>cp image.jpg ~/Documents</code_example>
+            <output>cp.jpg</output>
+          </example_of_use>
+        </parameters>
+      </command>
+      <command>
+        <code>dig</code>
+        <description>A flexible tool for interrogating DNS name servers.</description>
+        <parameters>
+          <parameter>
+            <param_code>-4</param_code>
+            <param_description>Force dig to only use IPv4 query transport.</param_description>
+            <parameter>
+              <param_code>-6</param_code>
+              <param_description>Force dig to only use IPv6 query transport.</param_description>
+            </parameter>
+            <example_of_use>
+              <code_example>dig google.com @8.8.8.8</code_example>
+              <output>dig.jpg</output>
+            </example_of_use>
+          </parameters>
+        </command>
+        <command>
+          <code>reboot</code>
+          <description>Stop and restart the system.</description>
+        </parameters>
+      </command>
+      <command>
+        <code>man</code>
+        <description>Help manual.</description>
+      </command>
+      <command>
+        <code>history</code>
+        <description>Command history.</description>
+        <parameters>
+          <parameter>
+            <param_code>-c</param_code>
+            <param_description>Clear the history list by deleting all the entries.</param_description>
+          </parameter>
+          <example_of_use>
+            <code_example>
+            </code_example>
+            <output>hist.jpg</output>
+          </example_of_use>
+        </parameters>
+      </command>
+    </commands>
+  </so>
+</commands_system>
