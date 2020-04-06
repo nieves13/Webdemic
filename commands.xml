@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="lista.css" ?>
+<?xml-stylesheet href="commands.css" ?>
 <commands_system>
   <so>
     <name> Microsoft Windows </name>
@@ -318,12 +318,12 @@
               <code_example>dig google.com @8.8.8.8</code_example>
               <output>dig.jpg</output>
             </example_of_use>
-          </parameters>
+			</parameter>
+        </parameters>
         </command>
         <command>
           <code>reboot</code>
           <description>Stop and restart the system.</description>
-        </parameters>
       </command>
       <command>
         <code>man</code>
