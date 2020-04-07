@@ -18,7 +18,7 @@
           </parameter>
           <example_of_use>
             <code_example>CMD /c write.exe </code_example>
-            <output>cmd.jpg</output>
+            <output>/images/CMD-c.jpg</output>
           </example_of_use>
         </parameters>
       </command>
@@ -52,7 +52,7 @@
           </parameter>
           <example_of_use>
             <code_example>FIND "Ejemplo" ejemplo.txt</code_example>
-            <output>find.jpg</output>
+            <output>/images/FIND.jpg</output>
           </example_of_use>
         </parameters>
       </command>
@@ -70,7 +70,7 @@
           </parameter>
           <example_of_use>
             <code_example>hostname</code_example>
-            <output>hostname.jpg</output>
+            <output>/images/hostname.jpg</output>
           </example_of_use>
         </parameters>
       </command>
@@ -84,7 +84,7 @@
           </parameter>
           <example_of_use>
             <code_example>ipconfig /all</code_example>
-            <output>ipc.jpg</output>
+            <output>/images/ipconfig.jpg</output>
           </example_of_use>
         </parameters>
       </command>
@@ -102,7 +102,7 @@
           </parameter>
           <example_of_use>
             <code_example>ping www.google.es</code_example>
-            <output>ping.jpg</output>
+            <output>/images/ping.jpg</output>
           </example_of_use>
         </parameters>
       </command>
@@ -125,7 +125,7 @@
           </parameter>
           <example_of_use>
             <code_example>ls -la </code_example>
-            <output>ls.jpg</output>
+            <output>/images/ls.jpg</output>
           </example_of_use>
         </parameters>
       </command>
@@ -151,7 +151,7 @@
           </parameter>
           <example_of_use>
             <code_example>cp -i</code_example>
-            <output>cp.jpg</output>
+            <output>/images/cp.jpg</output>
           </example_of_use>
         </parameters>
       </command>
@@ -165,7 +165,7 @@
           </parameter>
           <example_of_use>
             <code_example>mv -i molts-films.xsl archivo_renombrado.xsl </code_example>
-            <output>mv.jpg</output>
+            <output>/images/mv.jpg</output>
           </example_of_use>
         </parameters>
       </command>
@@ -179,7 +179,7 @@
           </parameter>
           <example_of_use>
             <code_example>ps -e</code_example>
-            <output>ps.jpg</output>
+            <output>/images/ps.jpg</output>
           </example_of_use>
         </parameters>
       </command>
@@ -193,7 +193,7 @@
           </parameter>
           <example_of_use>
             <code_example>ifconfig</code_example>
-            <output>ifconfig.jpg</output>
+            <output>/images/ifconfig.jpg</output>
           </example_of_use>
         </parameters>
       </command>
@@ -228,7 +228,7 @@
           </parameter>
           <example_of_use>
             <code_example>awk '{print NR "-" $ 1}' /Users/nievesaracil/Documents/hola.txt</code_example>
-            <output>awk.jpg</output>
+            <output>/images/awk.jpg</output>
           </example_of_use>
         </parameters>
       </command>
@@ -246,7 +246,7 @@
           </parameter>
           <example_of_use>
             <code_example>cd Documents</code_example>
-            <output>cd.jpg</output>
+            <output>/images/cd.jpg</output>
           </example_of_use>
         </parameters>
       </command>
@@ -272,7 +272,7 @@
           </parameter>
           <example_of_use>
             <code_example>cmp hola.txt hola1.txt</code_example>
-            <output>cmp.jpg</output>
+            <output>/images/cmp.jpg</output>
           </example_of_use>
         </parameters>
       </command>
@@ -293,8 +293,8 @@
             <param_description>All symbolic links are followed.</param_description>
           </parameter>
           <example_of_use>
-            <code_example>cp image.jpg ~/Documents</code_example>
-            <output>cp.jpg</output>
+            <code_example>cp /Users/nievesaracil/Desktop/image.jpg /Users/nievesaracil/Documents</code_example>
+            <output>/images/cp.jpg</output>
           </example_of_use>
         </parameters>
       </command>
@@ -311,8 +311,9 @@
             </parameter>
             <example_of_use>
               <code_example>dig google.com @8.8.8.8</code_example>
-              <output>dig.jpg</output>
+              <output>/images/dig.jpg</output>
             </example_of_use>
+          </parameter>
         </parameters>
         </command>
         <command>
@@ -333,7 +334,7 @@
           </parameter>
           <example_of_use>
             <code_example>history</code_example>
-            <output>hist.jpg</output>
+            <output>/images/hist.jpg</output>
           </example_of_use>
         </parameters>
       </command>
