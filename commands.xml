@@ -150,8 +150,7 @@
             <param_description>Includes subdirectories if they exist.</param_description>
           </parameter>
           <example_of_use>
-            <code_example>
-            </code_example>
+            <code_example>cp -i</code_example>
             <output>cp.jpg</output>
           </example_of_use>
         </parameters>
@@ -165,8 +164,7 @@
             <param_description>It indicates that you are waiting for confirmation if there are files in the destination that can be overwritten.</param_description>
           </parameter>
           <example_of_use>
-            <code_example>
-            </code_example>
+            <code_example>mv -i molts-films.xsl archivo_renombrado.xsl </code_example>
             <output>mv.jpg</output>
           </example_of_use>
         </parameters>
@@ -180,8 +178,7 @@
             <param_description>Display every active process on a Linux system in generic format.</param_description>
           </parameter>
           <example_of_use>
-            <code_example>
-            </code_example>
+            <code_example>ps -e</code_example>
             <output>ps.jpg</output>
           </example_of_use>
         </parameters>
@@ -195,8 +192,7 @@
             <param_description>Similar to no parameter, but if there are any inactive interfaces on the system, their configuration will also be displayed.</param_description>
           </parameter>
           <example_of_use>
-            <code_example>
-            </code_example>
+            <code_example>ifconfig</code_example>
             <output>ifconfig.jpg</output>
           </example_of_use>
         </parameters>
