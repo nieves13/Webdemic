@@ -231,8 +231,7 @@
             <param_description>Set the maximum number of fields (MaxFields).</param_description>
           </parameter>
           <example_of_use>
-            <code_example>
-            </code_example>
+            <code_example>awk '{print NR "-" $ 1}' /Users/nievesaracil/Documents/hola.txt</code_example>
             <output>awk.jpg</output>
           </example_of_use>
         </parameters>
@@ -276,7 +275,7 @@
             <param_description>Output byte numbers and values of all differing bytes.</param_description>
           </parameter>
           <example_of_use>
-            <code_example>cmp file1.txt file2.txt</code_example>
+            <code_example>cmp hola.txt hola1.txt</code_example>
             <output>cmp.jpg</output>
           </example_of_use>
         </parameters>
@@ -318,7 +317,6 @@
               <code_example>dig google.com @8.8.8.8</code_example>
               <output>dig.jpg</output>
             </example_of_use>
-			</parameter>
         </parameters>
         </command>
         <command>
@@ -338,8 +336,7 @@
             <param_description>Clear the history list by deleting all the entries.</param_description>
           </parameter>
           <example_of_use>
-            <code_example>
-            </code_example>
+            <code_example>history</code_example>
             <output>hist.jpg</output>
           </example_of_use>
         </parameters>
