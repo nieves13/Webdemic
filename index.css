@@ -1,6 +1,29 @@
 body{
+	background-color:#5EB5D1;
+	padding-left: 2em;
 }
 
 h1 {
-	
+
+}
+
+p {
+	font-style: Arial, Sans-serif, Verdana, "Times New Roman", "Lucida Console";
+}
+
+a{
+		text-decoration: underline;
+}
+a:link {
+	color: blue;
+}
+a :visited {
+	color: #915AEE;
+}
+a:hover {
+	color: orange;
+	font-size: 2em;
+}
+a:active {
+	color: pink;
 }
