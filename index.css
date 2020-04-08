@@ -3,12 +3,8 @@ body{
 	padding-left: 2em;
 }
 
-h1 {
-
-}
-
 p {
-	font-style: Arial, Sans-serif, Verdana, "Times New Roman", "Lucida Console";
+	font-family: Arial, Sans-serif, Verdana, "Times New Roman", "Lucida Console";
 }
 
 a{
