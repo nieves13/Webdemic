@@ -23,3 +23,9 @@ a:hover {
 a:active {
 	color: pink;
 }
+
+.valid{
+    position:relative;
+    clear:both;
+    float:right;
+}
