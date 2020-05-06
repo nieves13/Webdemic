@@ -15,12 +15,12 @@
                 <h2>System commands:</h2>
                 <ul>
                     <li>
-                        <xsl:for-each select="commands_system/so[name='Microsoft Windows']">
+                        <xsl:for-each select="commands_system/so[name='Linux']">
                             <ul>
                                 <xsl:for-each select="commands/command">
                                     <li>
-                                        <strong>Command: </strong>
-                                        <xsl:value-of select="code"/>
+                                         <p><strong>Command: </strong>
+                                        <xsl:value-of select="code"/></p>
                                     </li>
                                     <ul>
                                         <li>
@@ -43,20 +43,18 @@
                                                                 </li>
                                                             </ul>
                                                         </li>
-                                                        <!--<xsl:for-each select="../../command">!-->
-
-                                                        <!--</xsl:for-each>!-->
                                                     </ul>
                                                     </xsl:for-each>
                                                     <li>
                                                         <strong>Code example: </strong>
                                                         <xsl:value-of select="parameters/example_of_use/code_example"/>
+                                                    </li>
                                                         <img>
                                                             <xsl:attribute name="src">
                                                                 <xsl:value-of select="parameters/example_of_use/output"/>
                                                             </xsl:attribute>
                                                         </img>
-                                                    </li>
+
                                             </li>
                                         </xsl:if>
                                     </ul>
