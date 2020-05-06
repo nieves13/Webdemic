@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="commands.css" ?>
+<?xml-stylesheet type="text/xsl" href="commands.xsl"?>
 <commands_system>
   <so>
-    <name> Microsoft Windows </name>
+    <name>Microsoft Windows</name>
     <commands>
       <command>
         <code>cmd</code>
@@ -208,7 +209,7 @@
     </commands>
   </so>
   <so>
-    <name> MacOS </name>
+    <name>MacOS</name>
     <commands>
       <command>
         <code>alloc</code>
