@@ -63,3 +63,10 @@ parameters:before{
     font-weight : bold;
 
 }
+
+.oculta{
+  display:none;
+}
+.muestra{
+  display:block;
+}
