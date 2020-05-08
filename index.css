@@ -1,31 +1,52 @@
 body{
-	background-color:#5EB5D1;
-	padding-left: 2em;
 }
 
 p {
 	font-family: Arial, Sans-serif, Verdana, "Times New Roman", "Lucida Console";
 }
 
-a{
-		text-decoration: underline;
+
+
+.Header{
+	width: 95.5%;
+	background-color: green;
+  padding: 30px;
+  text-align: center;
+  display: block;
+
 }
-a:link {
-	color: blue;
+
+.Agrupacion a:link{
+	background-color: #f44336;
+	color: white;
+	padding: 15px;
+	text-align: center;
 }
-a :visited {
-	color: #915AEE;
+
+.Agrupacion a:hover {
+	background-color: #0099cc;
 }
-a:hover {
-	color: orange;
-	font-size: 2em;
+
+.Agrupacion p{
+	display: inline-block;
 }
-a:active {
-	color: pink;
+
+.Agrupacion{
+	background-color:  #f44336;
+}
+
+.Pie {
+		background-color: #FACFBB;
+	  padding: 5px 5px 50px 5px;
 }
 
 .valid{
     position:relative;
-    clear:both;
+    clear:none;
     float:right;
+}
+
+.cc{
+	position:relative;
+	clear:none;
 }
