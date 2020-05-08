@@ -8,8 +8,8 @@
             <head>
                 <title>System commands</title>
                 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-                <link rel="stylesheet" type="text/css" href="commands.css" media="screen"/>
-                <script type="text/javascript" src="commands.js"></script>
+                <link rel="stylesheet" type="text/css" href="../commands.css" media="screen"/>
+                <script type="text/javascript" src="../commands.js"></script>
             </head>
             <body>
                 <h2>System commands:</h2>
