@@ -1,19 +1,33 @@
 body{
+	background: #AFAAA8;
 }
 
 p {
 	font-family: Arial, Sans-serif, Verdana, "Times New Roman", "Lucida Console";
 }
 
+.Texto{
+	background-color: white;
+	padding: 30px;
+  text-align: justify;
+  display: block;
+}
 
+.Texto h2{
+  text-align: center;
+}
 
 .Header{
 	width: 95.5%;
-	background-color: green;
+	background-image: url('images/server.png');
+	/*background-color: #16E9BF;*/
   padding: 30px;
   text-align: center;
   display: block;
+}
 
+.Header h1{
+		color: white;
 }
 
 .Agrupacion a:link{
@@ -38,6 +52,7 @@ p {
 .Pie {
 		background-color: #FACFBB;
 	  padding: 5px 5px 50px 5px;
+		bottom: 0;
 }
 
 .valid{
