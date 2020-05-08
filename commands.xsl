@@ -8,88 +8,63 @@
             <head>
                 <title>System commands</title>
                 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-                <link rel="stylesheet" type="text/css" href="estilos.css" media="screen"/>
-                <script type="text/javascript" src="escrip_cd.js"></script>
+                <link rel="stylesheet" type="text/css" href="commands.css" media="screen"/>
+                <script type="text/javascript" src="commands.js"></script>
             </head>
             <body>
                 <h2>System commands:</h2>
-                <ul>
-                    <li>
-                        <xsl:for-each select="commands_system/so[name='Linux']">
+                <input type="text" id="buscar" name="buscar" value="Buscar" onchange="busca();"/>
+                <xsl:for-each select="commands_system/so[name='Linux']">
+                    <xsl:for-each select="commands/command">
+                        <div class="muestra">
                             <ul>
-                                <xsl:for-each select="commands/command">
+                                <li>
+                                    <p>
+                                        <strong class="command">
+                                            <xsl:value-of select="code"/>
+                                        </strong>
+                                    </p>
+                                </li>
+                                <ul>
                                     <li>
-                                         <p><strong>Command: </strong>
-                                        <xsl:value-of select="code"/></p>
+                                        <strong>Description: </strong>
+                                        <xsl:value-of select="description"/>
                                     </li>
-                                    <ul>
+                                    <xsl:if test="count(parameters)>=1">
                                         <li>
-                                            <strong>Description: </strong>
-                                            <xsl:value-of select="description"/>
-                                        </li>
-                                        <xsl:if test="count(parameters)>=1">
-                                            <li>
-                                                <strong>Parameters: </strong>
-                                                <xsl:for-each select="parameters/parameter">
+                                            <strong>Parameters: </strong>
+                                            <xsl:for-each select="parameters/parameter">
 
-                                                    <ul>
-                                                        <li>
-                                                            <strong>Param code: </strong>
-                                                            <xsl:value-of select="param_code"/>
-                                                            <ul>
-                                                                <li>
-                                                                    <strong>Param description: </strong>
-                                                                    <xsl:value-of select="param_description"/>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                    </xsl:for-each>
+                                                <ul>
                                                     <li>
-                                                        <strong>Code example: </strong>
-                                                        <xsl:value-of select="parameters/example_of_use/code_example"/>
+                                                        <strong>Param code: </strong>
+                                                        <xsl:value-of select="param_code"/>
+                                                        <ul>
+                                                            <li>
+                                                                <strong>Param description: </strong>
+                                                                <xsl:value-of select="param_description"/>
+                                                            </li>
+                                                        </ul>
                                                     </li>
-                                                        <img>
-                                                            <xsl:attribute name="src">
-                                                                <xsl:value-of select="parameters/example_of_use/output"/>
-                                                            </xsl:attribute>
-                                                        </img>
-
+                                                </ul>
+                                            </xsl:for-each>
+                                            <li>
+                                                <strong>Code example: </strong>
+                                                <xsl:value-of select="parameters/example_of_use/code_example"/>
                                             </li>
-                                        </xsl:if>
-                                    </ul>
-                                </xsl:for-each>
+                                            <img>
+                                                <xsl:attribute name="src">
+                                                    <xsl:value-of select="parameters/example_of_use/output"/>
+                                                </xsl:attribute>
+                                            </img>
+
+                                        </li>
+                                    </xsl:if>
+                                </ul>
                             </ul>
-                        </xsl:for-each>
-                    </li>
-
-                </ul>
-
-
-                <!--
-              <div>
-                <p>
-                  Titol: <input type="text" id="titulo"/> Artista: <input type="text" id="artista"/>
-                  <input type="button" value="Afig" onclick="afig();"/>
-                  <input type="button" value="Elimina" onclick="elimina();"/>
-                </p>
-                <p>
-                  Buscar:<input type="text" id="buscar"/>
-                  <input type="button" value="Buscar" onclick="buscar();"/>
-                </p>
-              </div>
-                <table>
-                  <tr>
-                    <th>Title</th>
-                    <th>Artist</th>
-                  </tr>
-                  <xsl:for-each select="catalog/cd">
-                  <tr>
-                    <td><xsl:value-of select="title"/></td>
-                    <td class="ar"><xsl:value-of select="artist"/></td>
-                  </tr>
-                  </xsl:for-each>
-                </table> !-->
+                        </div>
+                    </xsl:for-each>
+                </xsl:for-each>
             </body>
         </html>
     </xsl:template>
