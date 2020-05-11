@@ -14,6 +14,6 @@ Daniel:
   - Encargado de poner las fuentes.
 
 Adrian:
-  -Captuas de los comandos de Linux.
+  -Capturas de los comandos de Linux.
   -Encargado de mostrar el contenido ":before".
   -Encargado de hacer el planning.
