@@ -15,8 +15,8 @@
               <div class="Header"><h1>System commands</h1></div>
               <div class="Agrupacion">
                     <p><a href="../Windows/commandsW.xml">Windows</a></p>
-                    <p><a href="Linux/commandsL.xml">Linux</a></p>
-                    <p><a href="MacOS/commandsM.xml">MacOS</a></p>
+                    <p><a href="../Linux/commandsL.xml">Linux</a></p>
+                    <p><a href="../MacOS/commandsM.xml">MacOS</a></p>
             </div>
             <div class="Texto">
                 <input type="text" id="buscar" name="buscar" onchange="busca();"/>
