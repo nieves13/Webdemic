@@ -6,7 +6,7 @@
     <xsl:template match="/">
         <html>
             <head>
-                <title>System commands</title>
+                <title>Linux commands</title>
                 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
                 <link rel="stylesheet" type="text/css" href="../commands.css" media="screen"/>
                 <script type="text/javascript" src="../commands.js"></script>
@@ -17,9 +17,11 @@
                     <p><a href="../Windows/commandsW.xml">Windows</a></p>
                     <p><a href="../Linux/commandsL.xml">Linux</a></p>
                     <p><a href="../MacOS/commandsM.xml">MacOS</a></p>
+                    <p><a href="../index.html">Main page</a></p>
             </div>
             <div class="Texto">
-                <input type="text" id="buscar" name="buscar" onchange="busca();"/>
+                <input type="text" id="buscar" value="Buscar" name="buscar" onchange="busca();"/>
+                <img onclick="buscar()" src="../images/lens.jpg"/>
                 <xsl:for-each select="commands_system/so[name='Linux']">
                     <xsl:for-each select="commands/command">
                         <div class="as muestra">
