@@ -1,9 +1,13 @@
 body{
-	background: #AFAAA8;
+	background: #ECE3E1;
 }
 
 p {
 	font-family: Arial, Sans-serif, Verdana, "Times New Roman", "Lucida Console";
+}
+
+.img{
+	margin-left: 44%;
 }
 
 .Texto{
@@ -20,7 +24,6 @@ p {
 .Header{
 	width: 96.85%;
 	background-image: url('images/server.png');
-	/*background-color: #16E9BF;*/
   padding: 30px;
   text-align: center;
   display: block;
@@ -30,15 +33,25 @@ p {
 		color: white;
 }
 
+.Agrupacion a{
+	color: white;
+}
+
 .Agrupacion a:link{
 	background-color: #f44336;
 	color: white;
 	padding: 15px;
 	text-align: center;
+	text-decoration: none;
 }
 
 .Agrupacion a:hover {
 	background-color: #0099cc;
+	color: white;
+}
+
+.Agrupacion a:active{
+	color: white;
 }
 
 .Agrupacion p{

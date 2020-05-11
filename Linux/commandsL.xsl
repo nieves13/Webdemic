@@ -20,7 +20,7 @@
                     <p><a href="../index.html">Main page</a></p>
             </div>
             <div class="Texto">
-                <input type="text" id="buscar" value="Buscar" name="buscar" onchange="busca();"/>
+                <input type="text" id="buscar" placeholder="Buscar" name="buscar" onchange="busca();"/>
                 <img onclick="buscar()" src="../images/lens.jpg"/>
                 <xsl:for-each select="commands_system/so[name='Linux']">
                     <xsl:for-each select="commands/command">
@@ -73,6 +73,9 @@
                         </div>
                     </xsl:for-each>
                 </xsl:for-each>
+            <img style="border:0;width:200px;height:100px"
+                  src="../images/et.png"
+            alt="eTwinning" class="img" />
             </div>
               <div class="Pie">
                   <div class="valid">
