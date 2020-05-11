@@ -2,18 +2,23 @@ Jesus:
   -Capturas de los comandos de Windows.
   -Encargado de mostrar el XML en listas.
   -Encargado de poner el color de fondo.
+  -Modificar buscador añadiendo una imagen.
 
 Nieves:
   -Capturas de los comandos de MacOS.
   -Encargado de mostrar el contenido ":before".
   -Encargada de aplicar CSS al enlace "href".
-
+  -Encargada de realizar el JavaScript.
+  
 Daniel:
   -Capturas de los comandos de Windows.
   -Encargado de mostrar el XML en listas.
-  - Encargado de poner las fuentes.
+  -Encargado de poner las fuentes.
+  -Encargado de realizar el diseño del CSS.  
 
 Adrian:
   -Capturas de los comandos de Linux.
   -Encargado de mostrar el contenido ":before".
   -Encargado de hacer el planning.
+  -Encargado de realizar el XSLT.
+ 
