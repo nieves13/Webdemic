@@ -10,7 +10,7 @@
                 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
                 <link rel="stylesheet" type="text/css" href="../commands.css" media="screen"/>
                 <script type="text/javascript" src="../commands.js"></script>
-                <link rel="icon" type="image/png" href="images/icono.jpg" />
+                <link rel="icon" type="image/png" href="../images/icono.jpg" />
             </head>
             <body>
                 <div class="Header"><h1>System commands</h1></div>
